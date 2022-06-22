@@ -1,0 +1,23 @@
+:root[theme="noche"]{
+    --bg: #110038;
+    --gradient1:#EE3EFE;
+    --gradient2:#2E32FB;
+    --mainFont: 'Chakra Petch', sans-serif;
+    --white: #FFFFFF;
+    --letter-color: white;
+    --grey: #B4B4B4;
+    --grey-text: #8F8F8F;
+    --logo:url(../assets/gifOF_logo_dark.png);
+    --lupa:url(../assets/lupa.svg);
+    --li-bg: #CCCCCC;
+    --btn-active: #EE3EFE;
+    --lupa-active: url(../assets/lupa_light.svg);
+    --btn-text: white;
+    --camera:url(../assets/camera.svg);
+    --secundary-btn-bg: #110038;
+    --hover1: #CE36DB ;
+    --border: white;
+    --hover2:#2E32FB;
+    ;
+
+}

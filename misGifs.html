@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link id="icono" rel="shortcut icon" type="image/x-icon" href="./assets/gifOF_logo.ico">
+    <!--CSS-->
+    <link rel="stylesheet" href="style/temaDia.css">
+    <link rel="stylesheet" href="style/temaNoche.css">    
+    <link rel="stylesheet" href="style/styles.css">   
+    <!--FUENTES-->
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <title>Mis gifOS</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: <span id="visitas"></span></p>
+        </div>
+    </header>
+    <!-- MENU -->
+    <div class="menu">
+        <div class="container">
+            <div class="menuTop">          
+                <a href="index.html" class="cLogoGifs" id="logoGifs"></a>
+                <div class="menuDerecha">
+                    <a href="crearGifs.html"><div class="btnCrearGif">Crear Gifos</div></a>
+                    <div class="menuDesplegable">
+                        <div id="elegirTema" class="btnElegirTema" onclick="eligeTema()">
+                                <div class="textoEligeTema">Elegir tema</div>
+                                <div class="flechaAbajo"><img src="./assets/dropdown.svg" alt="dropdown"></div>
+                        </div>
+                        <div class="contenidoDesplegable" id="desplegable">
+                            <ul class="">
+                                <li><button id="temaDia" onclick="temaDia()">Sailor Day</button></li>
+                                <li><button id="temaNoche" onclick="temaNoche()">Sailor Night</button> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="#" style="color: #B4B4B4"><u>M</u>is Gifos</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="myGifs">
+        <div class="myGifsContenedor">
+            <div class="contenedorResultados" id="galeria">
+                <div class="contenedorTexto">Mis Guifos</div>
+                <div class="resultadosContainer" id="resultados"></div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="js/misGifs.js"></script>
+</body>
+</html>

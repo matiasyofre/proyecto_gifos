@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link id="icono" rel="shortcut icon" type="image/x-icon" href="./assets/gifOF_logo.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/temaDia.css">
+    <link rel="stylesheet" href="style/temaNoche.css">    
+    <link rel="stylesheet" href="style/styles.css">   
+    <!-- FUENTES -->
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:400,700&display=swap" rel="stylesheet">
+    <title>Mandale gifOS</title>
+</head>
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="container">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: <span id="visitas"></span></p>
+        </div>
+    </header>
+    <!--MENU-->
+    <section class="menu">
+        <div class="container" id="menu" >
+            <div class="menuTop">
+                <span class="cLogoGifs" id="logoGifs" ></span>
+                <div class="menuDerecha">
+                    <a href="crearGifs.html"><div class="btnCrearGif">Crear Gifos</div></a>
+                    <div class="menuDesplegable">
+                        <div id="elegirTema" class="btnElegirTema" onclick="eligeTema()">
+                                <div class="textoEligeTema">Elegir tema</div>
+                                <div class="flechaAbajo"><img src="./assets/dropdown.svg" alt="Flecha_Abajo"></div>
+                        </div>
+                        <div class="contenidoDesplegable" id="desplegable">
+                            <ul>
+                                <li><button id="temaDia" onclick="temaDia()"><u>S</u>ailor Day</button></li>
+                                <li><button id="temaNoche" onclick="temaNoche()"><u>S</u>ailor Night</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="misGifs.html" class="misGifs"><u>M</u>is Gifos</a>
+                </div>
+            </div>
+            <div class="btnMenu">
+                <div class="buscador">
+                    <form>
+                        <h2>Buscar</h2>
+                        <input type="text" name="search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…" id="buscar">
+                        <button id="btnBuscar" onclick="getResultadosBusqueda(event)" class="btn-Inactivo"><span class="lupa" id="lupa"></span>Buscar</button>
+                    </form>  
+                    <div class="busquedaSugerencias">
+                        <ul class="sugerencias">
+                        </ul>
+                    </div>  
+                </div>
+            </div>
+            <div class="historial hidden" id="historialBusqueda"></div>
+            <div class="titResultado hidden" id="titResultado"></div>
+            <div class="resultados" id="BusqResultados"></div>
+        </div>
+    </section>        
+    <!-- SUGERENCIAS -->
+    <section class="sugerencias">
+        <div class="container">
+            <div class="sugerenciasTop">
+                <h3>Hoy te sugerimos:</h3>
+            </div>
+            <div class="gifsSugerencias">
+                <div class="gifSugerido">
+                    <div class="gifTop">
+                        <p id="texto1"></p>
+                        <img src="./assets/close.svg" alt="cerrar">
+                    </div>
+                    <div class="btnGif">
+                        <img src="./assets/giphy.gif" alt="sugerencia" id="random1" class="gif">
+                        <div id="verMas1">Ver más...</div>
+                    </div>
+                </div>
+                <div class="gifSugerido">
+                    <div class="gifTop">
+                        <p id="texto2"></p>
+                        <img src="./assets/close.svg" alt="cerrar">
+                    </div>
+                    <div  class="btnGif">
+                        <img src="./assets/giphy.gif" alt="sugerencia" id="random2" class="gif">
+                        <div id="verMas2">Ver más...</div>
+                    </div>
+                </div>
+                <div class="gifSugerido">
+                    <div class="gifTop">
+                        <p id="texto3"></p>
+                        <img src="./assets/close.svg" alt="cerrar">
+                    </div>
+                    <div  class="btnGif">
+                        <img src="./assets/giphy.gif" alt="sugerencia" id="random3" class="gif">
+                        <div id="verMas3">Ver más...</div>
+                    </div>
+                </div>
+                <div class="gifSugerido">
+                    <div class="gifTop">
+                        <p id="texto4"></p>
+                        <img src="./assets/close.svg" alt="cerrar">
+                    </div>
+                    <div  class="btnGif">
+                        <img src="./assets/giphy.gif" alt="sugerencia" id="random4" class="gif">
+                        <div id="verMas4">Ver más...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TENDENCIAS -->
+    <section class="tendencias">
+        <div class="container">
+            <div class="sugerenciasTop">
+                <h3>Tendencias</h3>
+            </div>
+            <div class="resultados" id="resultadosContainer"></div>
+        </div>
+    </section>
+    <!-- SCRIPT -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

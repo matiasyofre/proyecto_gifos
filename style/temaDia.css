@@ -1,0 +1,23 @@
+:root[theme="dia"]{
+    --bg: #fff4fd;
+    --gradient1:#F7C9F3;
+    --gradient2:#4180F6;
+    --mainFont: 'Chakra Petch', sans-serif;
+    --white: #FFFFFF;
+    --letter-color: #110038;
+    --grey: #E6E6E6;
+    --grey-text:#B4B4B4;
+    --logo:url(../assets/gifOF_logo.png);
+    --lupa:url(../assets/lupa_inactive.svg);
+    --li-bg: #F0F0F0;
+    --btn-active: #F7C9F3;
+    --lupa-active: url(../assets/lupa.svg);
+    --btn-text: black;
+    --camera:url(../assets/camera_light.svg);
+    --secundary-btn-bg: #FFF4FD;
+    --hover1: #E6BBE2;
+    --border:#B4B4B4;
+    --hover2: #CCA6C9;
+
+}
+
